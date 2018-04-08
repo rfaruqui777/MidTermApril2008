@@ -74,14 +74,14 @@ public class ProcessStudentInfo {
 
 				//Store Qtp data into Qtp table in Database
 				//connectDB.insertToMongoDB(seleniumStudents,"qtp");
-				connectDB.insertDataFromArrayListToMySql(seleniumStudents, "qtp","studentList");
+				//connectDB.insertDataFromArrayListToMySql(seleniumStudents, "qtp","studentList");
 
 				//Store Selenium data into Selenium table in Database
 
 				//Retrieve Qtp students from Database
-               List<Student> stList = connectDB.readStudentListFromMySqlDB("qtp");
-               for(Student st:stList){
-               	  System.out.println(st.getFirstName()+" "+st.getLastName()+" "+st.getScore()+" "+st.getId());
+               //List<Student> stList = connectDB.readStudentListFromMySqlDB("qtp");
+               //for(Student st:stList){
+               	 // System.out.println(st.getFirstName()+" "+st.getLastName()+" "+st.getScore()+" "+st.getId());
 			   }
 
 			   //Retrieve Selenium students from Database
@@ -89,4 +89,4 @@ public class ProcessStudentInfo {
 
 			}
 
-}
+
