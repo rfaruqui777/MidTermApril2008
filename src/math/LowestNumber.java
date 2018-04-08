@@ -19,8 +19,8 @@ public class LowestNumber {
 		ConnectDB connectDB = new ConnectDB();
 		List<String> lowestValue = new ArrayList<String>();
 		try {
-			connectDB.insertDataFromArrayToMySql(array, "tbl_lowestNumber", "column_lowestNumber");
-			lowestValue = connectDB.readDataBase("tbl_lowestNumber", "column_lowestNumber");
+			connectDB.insertDataFromArrayToMySql(array, "Serial_Numbers", "SortingNumbers");
+			lowestValue = connectDB.readDataBase("Serial_Numbers", "SortingNumbers");
 
 		} catch (Exception e) {
 			e.printStackTrace();

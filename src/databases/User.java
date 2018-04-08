@@ -1,32 +1,22 @@
 package databases;
-
 /**
  * Created by mrahman on 4/23/17.
  */
 public class User {
 
-    String name;
-    int id;
+    int num;
 
     public User(){}
 
-    public User(String name, int id) {
-        this.name = name;
-        this.id = id;
-    }
-    public String getName() {
-        return name;
+    public User(int num) {
+        this.num = num;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public int getNum() {
+        return num;
     }
 
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
+    public void setNum(int num) {
+        this.num = num;
     }
 }
