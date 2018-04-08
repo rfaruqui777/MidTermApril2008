@@ -9,6 +9,7 @@ import java.util.ArrayList;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
+import java.lang.String;
 
 public class ProcessStudentInfo {
 
@@ -58,8 +59,11 @@ public class ProcessStudentInfo {
 				seleniumStudents = xmlReader.parseData(tag, pathSelenium);
 
 				//Parse Data using parseData method and then store data into Qtp ArrayList.
-				
+				qtpStudents = xmlReader.parseData(tag, pathQtp);
+
 				//add Selenium ArrayList data into map.
+
+
 			
 				//add Qtp ArrayList data into map.
 		
@@ -69,13 +73,13 @@ public class ProcessStudentInfo {
 
 
 				//Store Qtp data into Qtp table in Database
-				connectDB.insertToMongoDB(seleniumStudents,"qtp");
-				//connectDB.insertDataFromArrayListToMySql(seleniumStudents, "qtp","studentList");
+				//connectDB.insertToMongoDB(seleniumStudents,"qtp");
+				connectDB.insertDataFromArrayListToMySql(seleniumStudents, "qtp","studentList");
 
 				//Store Selenium data into Selenium table in Database
 
 				//Retrieve Qtp students from Database
-               List<Student> stList = connectDB.readStudentListFromMongoDB("qtp");
+               List<Student> stList = connectDB.readStudentListFromMySqlDB("qtp");
                for(Student st:stList){
                	  System.out.println(st.getFirstName()+" "+st.getLastName()+" "+st.getScore()+" "+st.getId());
 			   }
