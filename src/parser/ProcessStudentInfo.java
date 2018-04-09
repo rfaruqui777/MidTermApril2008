@@ -63,6 +63,7 @@ public class ProcessStudentInfo {
 
 				//add Selenium ArrayList data into map.
 
+				Map <Student,List<Student>> map = new LinkedHashMap<Student,List<Student>>();
 
 			
 				//add Qtp ArrayList data into map.
@@ -81,7 +82,7 @@ public class ProcessStudentInfo {
 				//Retrieve Qtp students from Database
                //List<Student> stList = connectDB.readStudentListFromMySqlDB("qtp");
                //for(Student st:stList){
-               	 // System.out.println(st.getFirstName()+" "+st.getLastName()+" "+st.getScore()+" "+st.getId());
+               	//System.out.println(st.getFirstName()+" "+st.getLastName()+" "+st.getScore()+" "+st.getId());
 			   }
 
 			   //Retrieve Selenium students from Database
