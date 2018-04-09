@@ -12,6 +12,5 @@ public class Fibonacci {
         next = prev - next;
     System.out.println(next);
     }
-
     }
 }
