@@ -1,37 +1,141 @@
 Please answer the below Data Structure Questions:
 
 why do we need data structure?
-A.
+A. To organized large volume of data.
 What are the various operations that can be performed on different Data Structures?
+A. Searching, Sorting, Insert, Create, Update, Read.
 List out the areas in which data structures are applied extensively?
+A. DBMS, Graphics, Statistical Analysis Package, Numerical Analysis, Simulation, Compiler Design, AI, OS.
 what is an Array?
+A. Is a container or variable of fixed amount of data with the same type.
 what is the difference between the Array and ArrayList?
+A. Array does not grow dynamically but ArrayList grows dynamically.
 what is LinkedList?
+A: Is a linear data structure where node is used and each node contains the data and the memory address of the next node.
 How is an Array different from Linked List?
+A: Array allocates the whole memory block whereas LinkedList does not allocate the whole memory block. In array, data
+are stored in consecutive way but in linked list data are store in different place in the memory. So it is easy to
+delete data using linked list rather than array.
 what is queue?
+A: Queue is a linear data structure where FIFO queue is applied that means the data will be remove first which is
+inserted first
 what is stack?
+A: Stack is a linear data structure where LIFO queue is applied that means the data that is  inserted first will be
+removed last.
 what is FIFO and LIFO?
+A: First In First Out that is followed by Queue and Last In Fast Out followed by Stack.
 what is the order of complexity?
+A: Complexity: how do the resource requirements of a program or algorithm scale, i.e., what happens as the size of
+the problem being solved gets larger.Complexity affects performance but not the other way around.
 what is the best case to search an element from an array?
+A: To find out the element in first index of the array.
 what is the worst case to search an element from an array?
+A: if we do not find out the element in the array.
 what is tree in data structure?
+A: A hierarchical tree structure, with a root value and subtrees of children with a parent node,
+represented as a set of linked nodes.
 what is graph in data structure?
+A: It consists of a finite (and possibly mutable) set of vertices or nodes or points, together with a
+set of unordered pairs of these vertices for an undirected graph or a set of ordered pairs for a directed graph.
 what is the difference between the HashTable and HashMap?
+A: HashTable is synchronized whereas HashMap is not synchronize. HashMap does not allowed null key and value. HashMap
+allowed only one null key and the value as much as we like.
 What are the major data structures used in the following areas : RDBMS, Network data model and Hierarchical data model.
+A: RDBMS- Linked List
+   Network data model – Graph
+   Hierarchical data model - Tree
 How HashMap works in java?
+A: HashMap in Java stores both key and value. When we pass Key and Value object to put() method on Java HashMap, it
+calls hashCode method on Key object and applies returned hashcode into its own hashing function to find a bucket location
+for storing Entry object.
 What is ArrayIndexOutOfBoundsException in java? When it occurs?
+A: when the index size of the array is smaller than the size of the element then it is called ArrayIndexOutOfBoundsException.
 What are the different ways of copying an array into another array?
+A: Manually.
+Arrays.copyOf()
+System.arraycopy()
+Object.clone()
 What is difference between an array and a linked list?
+A: Array allocates the whole memory block whereas LinkedList does not allocate the whole memory block. In array, data
+are stored in consecutive way but in linked list data are store in different place in the memory. So it is easy to
+delete data using linked list rather than array.
 What is DFS and BFS?
+A: The breadth first search (BFS) and the depth first search (DFS) are the two algorithms used for traversing and
+searching a node in a graph.
 What is Recursion?
+A: Recursion is a method that called by itself again and again in the program.
 What are linear and non linear data Structures?
+A: In linear data structure data are organized and if data are not organized then it is called non linear data structure.
 What is Big-(O)-notation?
+A. It is to describe the performance or complexity of an algorithm. Big O specifically
+describes the worst-case scenario, and can be used to describe the execution time required or the space used
+by an algorithm.
 Outlined different kind of sorting algorithm with time complexity?
+                               Time Complexity
+                Best            Average         Worst
+Selection Sort  Ω(n^2)	        θ(n^2)	        O(n^2)
+Bubble Sort     Ω(n)	        θ(n^2)	        O(n^2)
+Insertion Sort  Ω(n)	        θ(n^2)	        O(n^2)
+Heap Sort       Ω(n log(n))	    θ(n log(n))	    O(n log(n))
+Quick Sort      Ω(n log(n))	    θ(n log(n))	    O(n^2)
+Merge Sort      Ω(n log(n))	    θ(n log(n))	    O(n log(n))
+Bucket Sort     Ω(n+k)	        θ(n+k)	        O(n^2)
 
 Draw a table with time complexity in which it will summarize all the data structure feature's advantages and disadvantages.
-  a)In terms of Accessing element.
+  a)In terms of Accessing element:
   b)In terms of Inserting element.
   c)In terms of Searching element.
   d)In terms of Removing element.
+Arrays:
+Advantages:
+1. Access to an array element is fast since we can compute its location quickly.
+Disadvantages:
+1. If we want to insert or delete an element, we have to shift subsequent elements which slows our computation down.
+Linked Lists:
+Advantages:
+1. Inserting and deleting data does not require us to move/shift subsequent data elements.
+Disadvantages:
+1. If we want to access a specific element, we need to traverse the list from the head of the list to find it which can take longer than an array access.
+2. Easily corrupted (One can easily inset data in middle)
+Stack:
+Advantages:
+1. Helps manage the data in particular way (LIFO) which is not possible with Linked list and array.
+2. Stack frees you from the burden of remembering to cleanup(read delete) the object
+3. Not easily corrupted (No one can easily inset data in middle)
+Disadvantages:
+1. Stack memory is limited.
+2. Random access not possible
+Queue:
+Advantages:
+1. Helps manage the data in particular way (FIFO). which is not possible with Linked list and array.
+2. Not easily corrupted (No one can easily inset data in middle)
+Disadvantages:
+1. Random access not possible
+Tree:
+Advantages:
+1. Searching is faster (with some ordering e.g., BST). we can search for a given key in moderate time (quicker than Linked List and slower than arrays).
+2. Insert/delete keys in moderate time (quicker than Arrays and slower than Unordered Linked Lists).
+Disadvantages:
+1. Large waste of unused links
+2. Predetermined limit on number of a node’s children
+Heap:
+Advantages:
+1. When the data in the variable is needed beyond the lifetime of the current function.
+2. It can offer the maximum memory an OS can provide
+Disadvantages:
+1. You must make sure to free the memory when you are done
+Graph:
+Advantages:
+1. Finding the path in efficient way
+Disadvantages:
+1. High overhead
+2. Large waste of unused links
+
+
+
+
+
+
+
 
 
