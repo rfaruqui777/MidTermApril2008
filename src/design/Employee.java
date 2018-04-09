@@ -23,10 +23,16 @@ public interface Employee {
 	//employee benefit
 	public void benefitLayout();
 
-	//employee bonus
-	public void bonus();
+	// Add New Employee
+	public void addNewEmployee(EmployeeInfo employeeInfo);
 
-	//employee vacation
-	public void vacation();
+	// Update Employee Data
+	public void UpdateEmployee(int empId);
+
+	// ADD Employee Contact Information
+	public void addContactInformation(EmployeeInfo employeeInfo,int empId);
+
+	// Calculate the leave balance
+	public int TotalLeaveBalance(int emp_id);
 
 }
