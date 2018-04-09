@@ -16,8 +16,9 @@ public class EmployeeInfo {
  * Use Exception Handling.
  *
  */
+public abstract class Employee{
 
-	/*
+ }	/*
 	 * declare few static and final fields and some non-static fields
 	 */
 	static String companyName;
