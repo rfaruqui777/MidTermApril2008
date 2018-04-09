@@ -181,7 +181,7 @@ what is dependency injection in java?
 A: If dependency injection is used, a Java class can be tested in isolation.
 What is static binding and dynamic binding?
 A: When several method have the same names but different signature then it is called static binding.
-if some methods have same name, same signature but different logic then it is called dynamic binding. 
+if some methods have same name, same signature but different logic then it is called dynamic binding.
 
 
 
