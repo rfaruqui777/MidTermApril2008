@@ -15,6 +15,7 @@ public class DuplicateWord {
         for (int i = 0; i < totalChar; i++)
             if(count[i] > 1)
                 System.out.printf("%c,  %d times \n", i,  count[i]);
+
     }
     public static void main(String[] args) {
         /*
